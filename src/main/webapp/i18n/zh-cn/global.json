@@ -8,6 +8,9 @@
             "entities": {
                 "main": "数据",
                 "round": "Round",
+                "bicycleAdmin": "Bicycle Admin",
+                "electricBicycle": "Electric Bicycle",
+                "steward": "Steward",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

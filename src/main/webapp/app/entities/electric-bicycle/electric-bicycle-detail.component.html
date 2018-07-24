@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="electricBicycle">
+            <h2><span jhiTranslate="demo3App.electricBicycle.detail.title">Electric Bicycle</span> {{electricBicycle.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="demo3App.electricBicycle.bicycleID">Bicycle ID</span></dt>
+                <dd>
+                    <span>{{electricBicycle.bicycleID}}</span>
+                </dd>
+                <dt><span jhiTranslate="demo3App.electricBicycle.bicycleModel">Bicycle Model</span></dt>
+                <dd>
+                    <span>{{electricBicycle.bicycleModel}}</span>
+                </dd>
+                <dt><span jhiTranslate="demo3App.electricBicycle.bicycleInfo">Bicycle Info</span></dt>
+                <dd>
+                    <span>{{electricBicycle.bicycleInfo}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/electric-bicycle', electricBicycle.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

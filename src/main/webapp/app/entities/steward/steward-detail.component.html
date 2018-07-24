@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="steward">
+            <h2><span jhiTranslate="demo3App.steward.detail.title">Steward</span> {{steward.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="demo3App.steward.stewardID">Steward ID</span></dt>
+                <dd>
+                    <span>{{steward.stewardID}}</span>
+                </dd>
+                <dt><span jhiTranslate="demo3App.steward.stewardName">Steward Name</span></dt>
+                <dd>
+                    <span>{{steward.stewardName}}</span>
+                </dd>
+                <dt><span jhiTranslate="demo3App.steward.stewardInfo">Steward Info</span></dt>
+                <dd>
+                    <span>{{steward.stewardInfo}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/steward', steward.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

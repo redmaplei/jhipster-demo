@@ -1,0 +1,24 @@
+
+{
+    "demo3App": {
+        "bicycleAdmin" : {
+            "home": {
+                "title": "Bicycle Admins",
+                "createLabel": "创建新 Bicycle Admin",
+                "createOrEditLabel": "创建或编辑 Bicycle Admin"
+            },
+            "created": "Bicycle Admin {{ param }} 创建成功",
+            "updated": "Bicycle Admin {{ param }} 更新成功",
+            "deleted": "Bicycle Admin {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Bicycle Admin {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Bicycle Admin"
+            },
+            "username": "Username",
+            "password": "Password",
+            "phonenumber": "Phonenumber"
+        }
+    }
+}

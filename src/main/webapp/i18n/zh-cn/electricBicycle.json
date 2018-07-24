@@ -1,0 +1,24 @@
+
+{
+    "demo3App": {
+        "electricBicycle" : {
+            "home": {
+                "title": "Electric Bicycles",
+                "createLabel": "创建新 Electric Bicycle",
+                "createOrEditLabel": "创建或编辑 Electric Bicycle"
+            },
+            "created": "Electric Bicycle {{ param }} 创建成功",
+            "updated": "Electric Bicycle {{ param }} 更新成功",
+            "deleted": "Electric Bicycle {{ param }} 删除成功",
+            "delete": {
+                "question": "你确定要删除 Electric Bicycle {{ id }} 吗？"
+            },
+            "detail": {
+                "title": "Electric Bicycle"
+            },
+            "bicycleID": "Bicycle ID",
+            "bicycleModel": "Bicycle Model",
+            "bicycleInfo": "Bicycle Info"
+        }
+    }
+}

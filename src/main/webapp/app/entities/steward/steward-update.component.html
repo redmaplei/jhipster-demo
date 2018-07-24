@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-steward-heading" jhiTranslate="demo3App.steward.home.createOrEditLabel">Create or edit a Steward</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!steward.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="steward.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="demo3App.steward.stewardID" for="field_stewardID">Steward ID</label>
+                    <input type="text" class="form-control" name="stewardID" id="field_stewardID"
+                        [(ngModel)]="steward.stewardID" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="demo3App.steward.stewardName" for="field_stewardName">Steward Name</label>
+                    <input type="text" class="form-control" name="stewardName" id="field_stewardName"
+                        [(ngModel)]="steward.stewardName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="demo3App.steward.stewardInfo" for="field_stewardInfo">Steward Info</label>
+                    <input type="text" class="form-control" name="stewardInfo" id="field_stewardInfo"
+                        [(ngModel)]="steward.stewardInfo" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

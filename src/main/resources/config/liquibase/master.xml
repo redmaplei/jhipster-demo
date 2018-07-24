@@ -8,6 +8,9 @@
     <include file="config/liquibase/changelog/20180722013637_added_entity_Round.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20180722013637_added_entity_RoundC.xml" relativeToChangelogFile="false"/>
 
+    <include file="config/liquibase/changelog/20180723034216_added_entity_BicycleAdmin.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180723040621_added_entity_ElectricBicycle.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180723074958_added_entity_Steward.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
