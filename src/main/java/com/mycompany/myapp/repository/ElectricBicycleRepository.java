@@ -14,6 +14,8 @@ import java.util.List;
 @Repository
 public interface ElectricBicycleRepository extends JpaRepository<ElectricBicycle, Long> {
 
-    List<ElectricBicycle> findElectricBicycleByBicycleInfo(String bicycleInfo);
+    List<ElectricBicycle> findAllByBicycleInfo(String bicycleInfo);
+
+    ElectricBicycle findElectricBicycleByBicycleID(String bicycleID);
 
 }

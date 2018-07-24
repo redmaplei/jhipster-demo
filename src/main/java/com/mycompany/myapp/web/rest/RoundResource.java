@@ -76,6 +76,10 @@ public class RoundResource {
     /**
      * PUT  /rounds : Updates an existing round.
      *
+     * -------------------------------------------------------------------------------
+     * 更新的时候根据实体的ID，来调用Repository的save方法 save实体  ID同，就可以完成更新操作
+     * -------------------------------------------------------------------------------
+     *
      * @param round the round to update
      * @return the ResponseEntity with status 200 (OK) and with body the updated round,
      * or with status 400 (Bad Request) if the round is not valid,
